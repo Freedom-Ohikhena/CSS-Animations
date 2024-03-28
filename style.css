@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 1px solid aqua;
+    background-color: grey;
+
+    /* transition: 2s; */
+    /* transition: width 3s linear 2s ,height 2s ease-in-out 1s; */
+
+    animation: bounce 2s ease-in-out 0s infinite alternate-reverse;
+}
+@keyframes bounce {
+    from{
+        background-color: gray;
+        transform: translateY(200px);
+    }
+    to{
+        background-color: cornflowerblue;
+        transform: translateY(-200px);
+    }
+}
+div:hover{
+    transform: rotate(200deg);
+    transform: translate(200px,100px);
+    transform: translateX(-40vw);
+    transform: translateY(40vh);
+    transform: rotateX(2880deg);
+    transform: rotateZ(2880deg);
+    transform: scale(2,2);
+    /* transform: skew(50deg,30deg);
+    transform: skewX(80deg);
+    transform: skewY(60deg); */
+
+
+}
